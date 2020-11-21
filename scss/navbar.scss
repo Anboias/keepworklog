@@ -1,11 +1,12 @@
-#navbar {
+nav {
     position: absolute;
     left: 0px;
     top: 0px;
-    background: $navbarBgColor;
+    background: $navBgColor;
     color: #FFFFFF;
     width: 100%;
-    height: 45px;
+    height: $navHeight;
+    min-width: 878px;
 
 
     .container {

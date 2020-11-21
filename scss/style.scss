@@ -1,7 +1,10 @@
-$navbarBgColor: #437C90;
+/* VARIABLES */
+$navHeight: 45px;
+$navBgColor: #437C90;
 $leftSectionBgColor: #191C32;
 $rightSectionBgColor: #E5E5E5;
 
+/* HTML/BODY */
 body {
     margin: 0 40px;
     font-family: Montserrat;
@@ -9,4 +12,7 @@ body {
     font-weight: 500;
 }
 
+/* IMPORTS */
 @import './navbar.scss';
+@import './main.scss';
+@import './worklog.scss';

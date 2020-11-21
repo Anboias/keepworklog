@@ -1,0 +1,23 @@
+main {
+    position: relative;
+    top: $navHeight;
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(500px, 2fr);
+    grid-template-rows: minmax(300px, 1fr) minmax(500px, 2fr);
+
+    #worklog {
+        border: 1px solid red;
+    }
+
+    #days {
+        border: 1px solid yellow;
+    }
+
+    #todonew {
+        border: 1px solid green;
+    }
+
+    #todolist {
+        border: 1px solid blue;
+    }
+}
