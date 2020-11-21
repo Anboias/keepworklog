@@ -7,44 +7,35 @@ body {
 
 #navbar {
   position: absolute;
-  width: 100%;
-  height: 45px;
   left: 0px;
   top: 0px;
   background: #437C90;
+  color: #FFFFFF;
+  width: 100%;
+  height: 45px;
 }
 #navbar .container {
-  list-style-type: none;
+  display: flex;
+  align-items: center;
   height: 100%;
   margin: 0 40px;
   padding: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
 }
 #navbar .container li {
   flex: 1;
   text-align: center;
-  font-style: normal;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.015em;
-  color: #FFFFFF;
-}
-#navbar .container .logo-txt {
-  font-size: 16px;
-  text-align: left;
+  list-style-type: none;
 }
 #navbar .container .hello {
-  width: 100%;
-  padding-top: 3px;
-  font-size: 20px;
-}
-#navbar .container .hello a {
   font-size: 25px;
 }
+#navbar .container .logo-txt {
+  text-align: left;
+}
 #navbar .container .signout {
-  font-size: 16px;
   text-align: right;
 }
 
