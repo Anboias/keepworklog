@@ -1,0 +1,206 @@
+/* VARIABLES */
+/* HTML/BODY */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+/* IMPORTS */
+/* VARIABLES */
+nav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #437C90;
+  color: #ffffff;
+  width: 100%;
+  height: 45px;
+  min-width: 878px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+nav .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 40px;
+  padding: 0;
+}
+nav .container li {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  list-style-type: none;
+}
+nav .container .hello {
+  font-size: 25px;
+}
+nav .container .logo-txt {
+  text-align: left;
+}
+nav .container .signout {
+  text-align: right;
+}
+
+/* VARIABLES */
+main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 45px;
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(578px, 3fr);
+  grid-template-rows: 150px 1fr;
+  background-color: #E5E5E5;
+}
+main #worklog,
+main #weeks {
+  background-color: #191C32;
+  color: #E5E5E5;
+  padding: 0 40px;
+}
+main #todonew,
+main #todolist {
+  color: #191C32;
+  padding: 0 40px;
+  margin: 0;
+}
+
+/* VARIABLES */
+#worklog {
+  border-bottom: 1px solid #E5E5E5;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+#worklog p {
+  font-size: 24px;
+  letter-spacing: 0.345em;
+  align-self: center;
+  text-align: center;
+}
+#worklog select {
+  background-color: #191C32;
+  color: #E5E5E5;
+  align-self: center;
+  padding: 7px;
+  border-style: none;
+  border-radius: 5px;
+}
+#worklog select:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+#worklog select option {
+  background-color: #191C32;
+  color: #E5E5E5;
+}
+
+/* VARIABLES */
+#todonew {
+  border-bottom: 1px solid #191C32;
+}
+
+/* VARIABLES */
+#todolist .container {
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+#todolist .container .todo-container {
+  margin: 15px 2vw;
+  background: #fdfdfd;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
+  max-width: 1000px;
+}
+#todolist .container .todo-container .todo {
+  position: relative;
+  border-left: 5px solid #191C32;
+  color: #191C32;
+}
+#todolist .container .todo-container .todo p {
+  margin: 0;
+  padding: 15px 25px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 160%;
+}
+#todolist .container .todo-container .todo img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding-left: 5px;
+}
+#todolist .container .todo-container .done {
+  border-left: 5px solid #BCBCBC;
+  color: #BCBCBC;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* #todolist {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+
+    .todo {
+      height: 48px;
+      margin: 15px 0;
+      background: #fdfdfd;
+      border-left: 5px solid $leftBgColor;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
+    }
+
+    .draggable {
+      will-change: transform;
+      cursor: move;
+      transition: all 200ms;
+      user-select: none;
+      margin: 10px auto;
+      position: relative;
+    }
+
+    .draggable:after {
+      content: 'drag me';
+      right: 7px;
+      font-size: 10px;
+      position: absolute;
+      cursor: pointer;
+      line-height: 5;
+      transition: all 200ms;
+      transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
+      transform: translateX(120%);
+      opacity: 0;
+    }
+
+    .draggable:hover:after {
+      opacity: 1;
+      transform: translate(0);
+    }
+
+    .over {
+      transform: scale(1.1, 1.1);
+    }
+  }
+} */
+
+/*# sourceMappingURL=index.css.map */

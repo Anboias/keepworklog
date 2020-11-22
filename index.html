@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keep Worklog</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Google font - Montserrat -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
     <nav>
@@ -17,23 +26,260 @@
     </nav>
 
     <main>
-      <!-- <section id="left"> -->
+      <!-- Top Left section -->
       <section id="worklog">
-        <p>Worklog</p>
+        <p>Worklog 2020</p>
+        <label for="allweeks"></label>
+        <select id="allweeks" name="allweeks">
+          <option value="47">Week 47 : 16 Nov - 22 Nov</option>
+          <option value="48">Week 48 : 23 Nov - 29 Nov</option>
+          <option value="49">Week 49 : 30 Nov - 06 Dec</option>
+          <option value="50">Week 50 : 07 Dec - 13 Dec</option>
+          <option value="51">Week 51 : 14 Dec - 20 Dec</option>
+          <option value="47">Week 47 : 16 Nov - 22 Nov</option>
+          <option value="48">Week 48 : 23 Nov - 29 Nov</option>
+          <option value="49">Week 49 : 30 Nov - 06 Dec</option>
+          <option value="50">Week 50 : 07 Dec - 13 Dec</option>
+          <option value="51">Week 51 : 14 Dec - 20 Dec</option>
+          <option value="47">Week 47 : 16 Nov - 22 Nov</option>
+          <option value="48">Week 48 : 23 Nov - 29 Nov</option>
+          <option value="49">Week 49 : 30 Nov - 06 Dec</option>
+          <option value="50">Week 50 : 07 Dec - 13 Dec</option>
+          <option value="51">Week 51 : 14 Dec - 20 Dec</option>
+          <option value="47">Week 47 : 16 Nov - 22 Nov</option>
+          <option value="48">Week 48 : 23 Nov - 29 Nov</option>
+          <option value="49">Week 49 : 30 Nov - 06 Dec</option>
+          <option value="50">Week 50 : 07 Dec - 13 Dec</option>
+          <option value="51">Week 51 : 14 Dec - 20 Dec</option>
+        </select>
       </section>
-      <section id="days">
-        <p>Days</p>
-      </section>
-      <!-- </section> -->
 
-      <!-- <section id="right"> -->
+      <!-- Top Right section -->
       <section id="todonew">
-        <p>Add new</p>
+        <p>TODOnew</p>
       </section>
+
+      <!-- Down Left section -->
+      <section id="weeks">
+        <p>Weeks</p>
+      </section>
+
+      <!-- Down Right section -->
       <section id="todolist">
-        <p>TODO list</p>
+        <ul id="sortable1" class="container connectedSortable">
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>TODOlist</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS1</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS2</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS3</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS4</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS5</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS6 Before</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                consequuntur tempore iusto, id maiores eaque architecto, quod
+                veritatis, nobis sit amet consectetur adipisicing elit. Autem
+                consequuntur tempore iusto, id maiores eaque architecto, quod
+                veritatis, nobissit amet consectetur adipisicing elit. Autem
+                consequuntur tempore iusto, id maiores eaque architecto, quod
+                veritatis, nobis
+              </p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS After</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+          <li class="todo-container draggable" draggable="true">
+            <div class="todo">
+              <img
+                class="threedots-img"
+                src="assets/threedots.svg"
+                alt="threedots"
+              />
+              <p>User Firebase Hosting + Express JS</p>
+            </div>
+          </li>
+        </ul>
       </section>
-      <!-- </section> -->
     </main>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>

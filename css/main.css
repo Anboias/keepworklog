@@ -1,17 +1,26 @@
-/* Error: Undefined variable.
- *   ,
- * 3 |     top: $navHeight;
- *   |          ^^^^^^^^^^
- *   '
- *   scss/main.scss 3:10  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 3 \2502      top: $navHeight;\a   \2502           ^^^^^^^^^^\a   \2575 \a   scss/main.scss 3:10  root stylesheet";
+/* VARIABLES */
+main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 45px;
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(578px, 3fr);
+  grid-template-rows: 150px 1fr;
+  background-color: #E5E5E5;
 }
+main #worklog,
+main #weeks {
+  background-color: #191C32;
+  color: #E5E5E5;
+  padding: 0 40px;
+}
+main #todonew,
+main #todolist {
+  color: #191C32;
+  padding: 0 40px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

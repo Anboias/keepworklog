@@ -1,17 +1,38 @@
-/* Error: Undefined variable.
- *   ,
- * 5 |     background: $navBgColor;
- *   |                 ^^^^^^^^^^^
- *   '
- *   scss/navbar.scss 5:17  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 5 \2502      background: $navBgColor;\a   \2502                  ^^^^^^^^^^^\a   \2575 \a   scss/navbar.scss 5:17  root stylesheet";
+/* VARIABLES */
+nav {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: #437C90;
+  color: #ffffff;
+  width: 100%;
+  height: 45px;
+  min-width: 878px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
+nav .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin: 0 40px;
+  padding: 0;
+}
+nav .container li {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  list-style-type: none;
+}
+nav .container .hello {
+  font-size: 25px;
+}
+nav .container .logo-txt {
+  text-align: left;
+}
+nav .container .signout {
+  text-align: right;
+}
+
+/*# sourceMappingURL=navbar.css.map */

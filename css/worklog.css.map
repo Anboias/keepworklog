@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"worklog.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/variables.scss","../scss/worklog.scss"],"names":[],"mappings":"AAAA;ACEA;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI,kBDZM;ECaN,ODZO;ECaP;EACA;EACA;EACA;;AAEA;EACI;EACA;;AAGJ;EACI,kBDzBE;EC0BF,ODzBG","file":"worklog.css"}

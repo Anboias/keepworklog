@@ -1,23 +1,28 @@
+@import './variables.scss';
+
 main {
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
     top: $navHeight;
     display: grid;
-    grid-template-columns: minmax(300px, 1fr) minmax(500px, 2fr);
-    grid-template-rows: minmax(300px, 1fr) minmax(500px, 2fr);
+    grid-template-columns: minmax($leftMinWidth, 1fr) minmax($rightMinWidth, 3fr);
+    grid-template-rows: 150px 1fr;
+    background-color: $rightBgColor;
 
-    #worklog {
-        border: 1px solid red;
+    #worklog,
+    #weeks {
+        background-color: $leftBgColor;
+        color: $leftFontColor;
+        padding: 0 40px;
     }
 
-    #days {
-        border: 1px solid yellow;
-    }
-
-    #todonew {
-        border: 1px solid green;
-    }
-
+    #todonew,
     #todolist {
-        border: 1px solid blue;
+        color: $rightFontColor;
+        padding: 0 40px;
+        margin: 0;
     }
+
 }
