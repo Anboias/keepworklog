@@ -362,6 +362,7 @@ input:checked + .slider:before {
 #weeks .container .weekday {
   position: relative;
   margin-bottom: 50px;
+  margin-top: 25px;
 }
 #weeks .container .weekday h1 {
   position: relative;

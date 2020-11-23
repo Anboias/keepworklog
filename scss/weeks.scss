@@ -1,19 +1,12 @@
-// <section id="weeks">
-// <div class="container">
-//   <div class="weekday">
-//     <h1>Monday</h1>
-//     <ul class="weekday-list">
-//  <i class="fas fa-check-circle"></i>
-// <li>To do element nr 1</li>
-// <li>
-
 @import './variables.scss';
 
 #weeks {
     .container {
+
         .weekday {
             position: relative;
             margin-bottom: 50px;
+            margin-top: 25px;
             // font-size: 12px; // for FontAwesome's first icon
 
             h1 {
