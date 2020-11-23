@@ -1,17 +1,25 @@
 /* VARIABLES */
+*:focus {
+  outline: none;
+}
+
 #worklog {
   border-bottom: 1px solid #E5E5E5;
   display: flex;
+}
+#worklog .container {
+  display: flex;
   flex-direction: column;
   text-transform: uppercase;
+  margin: auto;
 }
-#worklog p {
+#worklog .container p {
   font-size: 24px;
   letter-spacing: 0.345em;
   align-self: center;
   text-align: center;
 }
-#worklog select {
+#worklog .container select {
   background-color: #191C32;
   color: #E5E5E5;
   align-self: center;
@@ -19,11 +27,12 @@
   border-style: none;
   border-radius: 5px;
 }
-#worklog select:hover {
-  transform: scale(1.1);
+#worklog .container select:hover {
+  transform: scale(1.5);
   transition: all 0.5s;
+  text-decoration-line: underline;
 }
-#worklog select option {
+#worklog .container select option {
   background-color: #191C32;
   color: #E5E5E5;
 }

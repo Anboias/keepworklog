@@ -1,4 +1,8 @@
 /* VARIABLES */
+*:focus {
+  outline: none;
+}
+
 main {
   position: absolute;
   left: 0;
@@ -7,7 +11,7 @@ main {
   top: 45px;
   display: grid;
   grid-template-columns: minmax(300px, 1fr) minmax(578px, 3fr);
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: 200px 1fr;
   background-color: #E5E5E5;
 }
 main #worklog,

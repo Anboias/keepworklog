@@ -8,7 +8,7 @@ main {
     top: $navHeight;
     display: grid;
     grid-template-columns: minmax($leftMinWidth, 1fr) minmax($rightMinWidth, 3fr);
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 200px 1fr;
     background-color: $rightBgColor;
 
     #worklog,

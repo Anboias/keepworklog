@@ -1,0 +1,63 @@
+// <section id="weeks">
+// <div class="container">
+//   <div class="weekday">
+//     <h1>Monday</h1>
+//     <ul class="weekday-list">
+//  <i class="fas fa-check-circle"></i>
+// <li>To do element nr 1</li>
+// <li>
+
+@import './variables.scss';
+
+#weeks {
+    .container {
+        .weekday {
+            position: relative;
+            margin-bottom: 50px;
+            // font-size: 12px; // for FontAwesome's first icon
+
+            h1 {
+                position: relative;
+                font-size: 14px;
+                border-bottom: 1px solid $leftFontColor;
+                text-transform: uppercase;
+                padding-bottom: 0;
+                margin-bottom: 3px;
+            }
+
+            .fa-copy {
+                position: absolute;
+                top: 1px;
+                right: 1px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+
+            .weekday-list {
+                list-style-type: none;
+                padding-top: 0;
+                margin: 0;
+                padding: 0;
+                // border: 1px solid white;
+                background: rgba(255, 255, 255, 0.1);
+                min-height: 30px;
+
+                li {
+                    position: relative;
+                    padding: 5px;
+                    padding-left: 0;
+                    font-size: 12px;
+
+                    i {
+                        position: absolute;
+                        left: -15px;
+                        top: 6px;
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

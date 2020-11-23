@@ -1,4 +1,8 @@
 /* VARIABLES */
+*:focus {
+  outline: none;
+}
+
 nav {
   position: absolute;
   left: 0px;

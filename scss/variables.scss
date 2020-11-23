@@ -11,3 +11,18 @@ $rightMinWidth: 578px !default;
 $leftFontColor: $rightBgColor !default;
 $rightFontColor: $leftBgColor !default;
 $slimBorder: 1px solid rgba(0, 0, 0, 0.15) !default;
+$rightSectionMargin: 15px 2vw;
+
+
+@mixin box-style {
+    border: $slimBorder;
+    background-color: white;
+    border-radius: 7px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
+    max-width: 1000px;
+}
+
+*:focus {
+    outline: none;
+}

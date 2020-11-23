@@ -1,3 +1,6 @@
 /* VARIABLES */
+*:focus {
+  outline: none;
+}
 
 /*# sourceMappingURL=variables.css.map */

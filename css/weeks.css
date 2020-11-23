@@ -1,0 +1,47 @@
+/* VARIABLES */
+*:focus {
+  outline: none;
+}
+
+#weeks .container .weekday {
+  position: relative;
+  margin-bottom: 50px;
+}
+#weeks .container .weekday h1 {
+  position: relative;
+  font-size: 14px;
+  border-bottom: 1px solid #E5E5E5;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 3px;
+}
+#weeks .container .weekday .fa-copy {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+#weeks .container .weekday .fa-copy:hover {
+  transform: scale(1.2);
+}
+#weeks .container .weekday .weekday-list {
+  list-style-type: none;
+  padding-top: 0;
+  margin: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  min-height: 30px;
+}
+#weeks .container .weekday .weekday-list li {
+  position: relative;
+  padding: 5px;
+  padding-left: 0;
+  font-size: 12px;
+}
+#weeks .container .weekday .weekday-list li i {
+  position: absolute;
+  left: -15px;
+  top: 6px;
+  color: #26BC00;
+}
+
+/*# sourceMappingURL=weeks.css.map */

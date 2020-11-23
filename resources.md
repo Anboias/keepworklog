@@ -6,3 +6,5 @@ https://stackoverflow.com/questions/46515077/unable-to-install-node-sass-in-my-p
 SCSS
 npm install -g sass
 sass --watch scss:css
+
+&:hover {border: 1px solid red;}
