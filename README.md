@@ -1,5 +1,4 @@
-Personal project 
-- TODO list -
+TODO list
 
 Can be seen here: https://keepworklog.netlify.app/
 
