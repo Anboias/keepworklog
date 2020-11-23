@@ -115,12 +115,78 @@ main #todolist {
 }
 
 /* VARIABLES */
+/* Used in todolist.scss */
+/* VARIABLES */
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  right: 30px;
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #BCBCBC;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #26BC00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #BCBCBC;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 #todolist .container {
   padding-left: 0;
   padding-right: 0;
   list-style-type: none;
 }
-#todolist .container .todo-container {
+#todolist .container .todo-li {
   margin: 15px 2vw;
   background: #fdfdfd;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -128,28 +194,44 @@ main #todolist {
   box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
   max-width: 1000px;
 }
-#todolist .container .todo-container .todo {
+#todolist .container .todo-li:hover {
+  transform: scaleY(1.1);
+  transform: scaleX(1.005);
+  transition: all 0.3s;
+  box-shadow: 5px 5px 5px rgba(17, 47, 95, 0.5);
+}
+#todolist .container .todo-li .todo-container {
   position: relative;
   border-left: 5px solid #191C32;
   color: #191C32;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
 }
-#todolist .container .todo-container .todo p {
-  margin: 0;
-  padding: 15px 25px;
-  display: inline-block;
+#todolist .container .todo-li .todo-container .fa-ellipsis-v {
+  padding-left: 5px;
+}
+#todolist .container .todo-li .todo-container .fa-trash-alt,
+#todolist .container .todo-li .todo-container .fa-pencil-alt {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  color: #BCBCBC;
+}
+#todolist .container .todo-li .todo-container .fa-pencil-alt {
+  top: auto;
+  bottom: 5px;
+}
+#todolist .container .todo-li .todo-container p {
+  margin: 15px 75px 15px 20px;
   font-size: 12px;
   line-height: 160%;
 }
-#todolist .container .todo-container .todo img {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  padding-left: 5px;
+#todolist .container .todo-li .todo-container p:hover {
+  border: 1px solid red;
 }
-#todolist .container .todo-container .done {
-  border-left: 5px solid #BCBCBC;
+#todolist .container .todo-li .todo-done {
+  border-color: #26BC00;
   color: #BCBCBC;
   font-weight: 200;
   font-style: italic;
