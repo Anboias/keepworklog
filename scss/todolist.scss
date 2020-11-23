@@ -4,7 +4,10 @@
 #todolist {
   margin: $rightSectionMargin;
 
+
+
   .container {
+    padding-bottom: 30px;
 
     #sortable1 {
       margin: 0;
@@ -48,7 +51,6 @@
               color: $rightFontColor;
               transform: scale(1.2);
               color: rgb(255, 29, 29);
-
             }
           }
 

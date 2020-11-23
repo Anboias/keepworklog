@@ -3,6 +3,7 @@
 /* HTML/BODY */
 html,
 body {
+    position: relative;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -24,3 +25,4 @@ body {
 @import './todonew.scss';
 @import './todolist.scss';
 @import './weeks.scss';
+@import './footer.scss';

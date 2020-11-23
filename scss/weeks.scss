@@ -1,7 +1,9 @@
 @import './variables.scss';
 
 #weeks {
+
     .container {
+        padding-bottom: 30px;
 
         .weekday {
             position: relative;

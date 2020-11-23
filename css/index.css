@@ -6,6 +6,7 @@
 /* HTML/BODY */
 html,
 body {
+  position: relative;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -136,6 +137,7 @@ main #todolist {
 }
 
 #todonew {
+  border-bottom: 1px solid #191C32;
   margin: 15px 2vw;
   height: 100%;
   max-width: 1000px;
@@ -243,6 +245,9 @@ input:checked + .slider:before {
 
 #todolist {
   margin: 15px 2vw;
+}
+#todolist .container {
+  padding-bottom: 30px;
 }
 #todolist .container #sortable1 {
   margin: 0;
@@ -359,6 +364,9 @@ input:checked + .slider:before {
   outline: none;
 }
 
+#weeks .container {
+  padding-bottom: 30px;
+}
 #weeks .container .weekday {
   position: relative;
   margin-bottom: 50px;
@@ -399,6 +407,27 @@ input:checked + .slider:before {
   left: -15px;
   top: 6px;
   color: #26BC00;
+}
+
+/* VARIABLES */
+*:focus {
+  outline: none;
+}
+
+#footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  background-color: #BCBCBC;
+  bottom: 0;
+  width: 100%;
+}
+#footer p {
+  position: relative;
+  font-size: 12px;
+  color: #191C32;
+  margin: auto;
 }
 
 /*# sourceMappingURL=index.css.map */

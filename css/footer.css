@@ -1,0 +1,22 @@
+/* VARIABLES */
+*:focus {
+  outline: none;
+}
+
+#footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  background-color: #BCBCBC;
+  bottom: 0;
+  width: 100%;
+}
+#footer p {
+  position: relative;
+  font-size: 12px;
+  color: #191C32;
+  margin: auto;
+}
+
+/*# sourceMappingURL=footer.css.map */

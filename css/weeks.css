@@ -3,6 +3,9 @@
   outline: none;
 }
 
+#weeks .container {
+  padding-bottom: 30px;
+}
 #weeks .container .weekday {
   position: relative;
   margin-bottom: 50px;
