@@ -4,18 +4,22 @@
 #todolist {
   margin: $rightSectionMargin;
 
-
-
   .container {
     padding-bottom: 30px;
 
-    #sortable1 {
+    .sortable {
+      min-height: 100vh;
+    }
+
+    .todo-list {
       margin: 0;
       padding-left: 0;
       padding-right: 0;
       list-style-type: none;
 
-      .todo-li {
+      @include draggable;
+
+      li {
         //   height: 48px;
         margin: 25px 0;
         @include box-style;
@@ -28,6 +32,7 @@
         }
 
         .todo-container {
+
           position: relative;
           border-left: 5px solid $leftBgColor;
           color: $rightFontColor;
@@ -35,17 +40,24 @@
           align-items: center;
           font-size: 10px; // for FontAwesome
 
-
-          .fa-ellipsis-v {
-            padding-left: 5px;
-          }
-
+          .fa-ellipsis-v,
           .fa-trash-alt,
           .fa-pencil-alt {
             position: absolute;
             right: 4px;
             top: 4px;
             color: $gray;
+
+          }
+
+          .fa-ellipsis-v {
+            left: 4px;
+            top: auto;
+            bottom: auto;
+            color: $leftBgColor;
+          }
+
+          .fa-trash-alt {
 
             &:hover {
               color: $rightFontColor;
@@ -55,11 +67,7 @@
           }
 
           .fa-pencil-alt {
-            top: auto;
-            bottom: 4px;
-          }
-
-          .fa-pencil-alt {
+            // Not used for now
             display: none;
           }
 
@@ -68,6 +76,12 @@
             font-size: 14px;
             line-height: 130%;
           }
+
+          /* Hide elements from the TODO-list moved here from the Week column */
+          .fa-check-circle {
+            display: none;
+          }
+
         }
 
         .todo-done {
@@ -75,58 +89,13 @@
           color: $gray;
           font-weight: 200;
           font-style: italic;
+
+          .fa-ellipsis-v {
+            color: $gray;
+          }
         }
       }
     }
+
   }
 }
-
-
-
-/* #todolist {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    list-style-type: none;
-
-    .todo {
-      height: 48px;
-      margin: 15px 0;
-      background: #fdfdfd;
-      border-left: 5px solid $leftBgColor;
-      box-sizing: border-box;
-      box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
-    }
-
-    .draggable {
-      will-change: transform;
-      cursor: move;
-      transition: all 200ms;
-      user-select: none;
-      margin: 10px auto;
-      position: relative;
-    }
-
-    .draggable:after {
-      content: 'drag me';
-      right: 7px;
-      font-size: 10px;
-      position: absolute;
-      cursor: pointer;
-      line-height: 5;
-      transition: all 200ms;
-      transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
-      transform: translateX(120%);
-      opacity: 0;
-    }
-
-    .draggable:hover:after {
-      opacity: 1;
-      transform: translate(0);
-    }
-
-    .over {
-      transform: scale(1.1, 1.1);
-    }
-  }
-} */

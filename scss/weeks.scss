@@ -1,5 +1,7 @@
 @import './variables.scss';
 
+@include draggable;
+
 #weeks {
 
     .container {
@@ -45,13 +47,31 @@
                     padding-left: 0;
                     font-size: 12px;
 
-                    i {
+                    .fa-check-circle {
                         position: absolute;
+                        display: block;
                         left: -15px;
                         top: 6px;
                         color: $green;
                     }
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
                 }
+
+
+
+                /* Hide elements from the TODO list moved here from the right column */
+                .fa-ellipsis-v,
+                .fa-trash-alt,
+                .fa-pencil-alt,
+                .switch {
+                    display: none;
+                }
+
+
             }
         }
     }

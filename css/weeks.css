@@ -3,6 +3,14 @@
   outline: none;
 }
 
+.draggable {
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.1;
+}
+
 #weeks .container {
   padding-bottom: 30px;
 }
@@ -34,6 +42,7 @@
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   min-height: 30px;
+  /* Hide elements from the TODO list moved here from the right column */
 }
 #weeks .container .weekday .weekday-list li {
   position: relative;
@@ -41,11 +50,22 @@
   padding-left: 0;
   font-size: 12px;
 }
-#weeks .container .weekday .weekday-list li i {
+#weeks .container .weekday .weekday-list li .fa-check-circle {
   position: absolute;
+  display: block;
   left: -15px;
   top: 6px;
   color: #26BC00;
+}
+#weeks .container .weekday .weekday-list li p {
+  margin: 0;
+  padding: 0;
+}
+#weeks .container .weekday .weekday-list .fa-ellipsis-v,
+#weeks .container .weekday .weekday-list .fa-trash-alt,
+#weeks .container .weekday .weekday-list .fa-pencil-alt,
+#weeks .container .weekday .weekday-list .switch {
+  display: none;
 }
 
 /*# sourceMappingURL=weeks.css.map */

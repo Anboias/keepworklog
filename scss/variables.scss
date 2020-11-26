@@ -23,6 +23,16 @@ $rightSectionMargin: 15px 2vw;
     max-width: 1000px;
 }
 
+@mixin draggable {
+    .draggable {
+        cursor: move;
+    }
+
+    .draggable.dragging {
+        opacity: .1;
+    }
+}
+
 *:focus {
     outline: none;
 }

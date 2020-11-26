@@ -249,13 +249,22 @@ input:checked + .slider:before {
 #todolist .container {
   padding-bottom: 30px;
 }
-#todolist .container #sortable1 {
+#todolist .container .sortable {
+  min-height: 100vh;
+}
+#todolist .container .todo-list {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
   list-style-type: none;
 }
-#todolist .container #sortable1 .todo-li {
+#todolist .container .todo-list .draggable {
+  cursor: move;
+}
+#todolist .container .todo-list .draggable.dragging {
+  opacity: 0.1;
+}
+#todolist .container .todo-list li {
   margin: 25px 0;
   border: 1px solid rgba(0, 0, 0, 0.15);
   background-color: white;
@@ -264,104 +273,71 @@ input:checked + .slider:before {
   box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
   max-width: 1000px;
 }
-#todolist .container #sortable1 .todo-li:hover {
+#todolist .container .todo-list li:hover {
   transform: scaleY(1.2);
   transform: scaleX(1.01);
   box-shadow: 5px 5px 5px rgba(17, 47, 95, 0.5);
 }
-#todolist .container #sortable1 .todo-li .todo-container {
+#todolist .container .todo-list li .todo-container {
   position: relative;
   border-left: 5px solid #191C32;
   color: #191C32;
   display: flex;
   align-items: center;
   font-size: 10px;
+  /* Hide elements from the TODO-list moved here from the Week column */
 }
-#todolist .container #sortable1 .todo-li .todo-container .fa-ellipsis-v {
-  padding-left: 5px;
-}
-#todolist .container #sortable1 .todo-li .todo-container .fa-trash-alt,
-#todolist .container #sortable1 .todo-li .todo-container .fa-pencil-alt {
+#todolist .container .todo-list li .todo-container .fa-ellipsis-v,
+#todolist .container .todo-list li .todo-container .fa-trash-alt,
+#todolist .container .todo-list li .todo-container .fa-pencil-alt {
   position: absolute;
   right: 4px;
   top: 4px;
   color: #BCBCBC;
 }
-#todolist .container #sortable1 .todo-li .todo-container .fa-trash-alt:hover,
-#todolist .container #sortable1 .todo-li .todo-container .fa-pencil-alt:hover {
+#todolist .container .todo-list li .todo-container .fa-ellipsis-v {
+  left: 4px;
+  top: auto;
+  bottom: auto;
+  color: #191C32;
+}
+#todolist .container .todo-list li .todo-container .fa-trash-alt:hover {
   color: #191C32;
   transform: scale(1.2);
   color: #ff1d1d;
 }
-#todolist .container #sortable1 .todo-li .todo-container .fa-pencil-alt {
-  top: auto;
-  bottom: 4px;
-}
-#todolist .container #sortable1 .todo-li .todo-container .fa-pencil-alt {
+#todolist .container .todo-list li .todo-container .fa-pencil-alt {
   display: none;
 }
-#todolist .container #sortable1 .todo-li .todo-container p {
+#todolist .container .todo-list li .todo-container p {
   margin: 15px 60px 15px 20px;
   font-size: 14px;
   line-height: 130%;
 }
-#todolist .container #sortable1 .todo-li .todo-done {
+#todolist .container .todo-list li .todo-container .fa-check-circle {
+  display: none;
+}
+#todolist .container .todo-list li .todo-done {
   border-color: #26BC00;
   color: #BCBCBC;
   font-weight: 200;
   font-style: italic;
 }
+#todolist .container .todo-list li .todo-done .fa-ellipsis-v {
+  color: #BCBCBC;
+}
 
-/* #todolist {
-  .container {
-    padding-left: 0;
-    padding-right: 0;
-    list-style-type: none;
-
-    .todo {
-      height: 48px;
-      margin: 15px 0;
-      background: #fdfdfd;
-      border-left: 5px solid $leftBgColor;
-      box-sizing: border-box;
-      box-shadow: 5px 5px 5px rgba(9, 30, 64, 0.2);
-    }
-
-    .draggable {
-      will-change: transform;
-      cursor: move;
-      transition: all 200ms;
-      user-select: none;
-      margin: 10px auto;
-      position: relative;
-    }
-
-    .draggable:after {
-      content: 'drag me';
-      right: 7px;
-      font-size: 10px;
-      position: absolute;
-      cursor: pointer;
-      line-height: 5;
-      transition: all 200ms;
-      transition-timing-function: cubic-bezier(0.48, 0.72, 0.62, 1.5);
-      transform: translateX(120%);
-      opacity: 0;
-    }
-
-    .draggable:hover:after {
-      opacity: 1;
-      transform: translate(0);
-    }
-
-    .over {
-      transform: scale(1.1, 1.1);
-    }
-  }
-} */
 /* VARIABLES */
 *:focus {
   outline: none;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.1;
 }
 
 #weeks .container {
@@ -395,6 +371,7 @@ input:checked + .slider:before {
   padding: 0;
   background: rgba(255, 255, 255, 0.1);
   min-height: 30px;
+  /* Hide elements from the TODO list moved here from the right column */
 }
 #weeks .container .weekday .weekday-list li {
   position: relative;
@@ -402,11 +379,22 @@ input:checked + .slider:before {
   padding-left: 0;
   font-size: 12px;
 }
-#weeks .container .weekday .weekday-list li i {
+#weeks .container .weekday .weekday-list li .fa-check-circle {
   position: absolute;
+  display: block;
   left: -15px;
   top: 6px;
   color: #26BC00;
+}
+#weeks .container .weekday .weekday-list li p {
+  margin: 0;
+  padding: 0;
+}
+#weeks .container .weekday .weekday-list .fa-ellipsis-v,
+#weeks .container .weekday .weekday-list .fa-trash-alt,
+#weeks .container .weekday .weekday-list .fa-pencil-alt,
+#weeks .container .weekday .weekday-list .switch {
+  display: none;
 }
 
 /* VARIABLES */
