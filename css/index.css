@@ -294,6 +294,8 @@ input:checked + .slider:before {
   right: 4px;
   top: 4px;
   color: #BCBCBC;
+  cursor: pointer;
+  padding: 2px;
 }
 #todolist .container .todo-list li .todo-container .fa-ellipsis-v {
   left: 4px;
@@ -307,10 +309,15 @@ input:checked + .slider:before {
   color: #ff1d1d;
 }
 #todolist .container .todo-list li .todo-container .fa-pencil-alt {
-  display: none;
+  top: auto;
+  bottom: 4px;
+}
+#todolist .container .todo-list li .todo-container .fa-pencil-alt:hover {
+  color: #26BC00;
 }
 #todolist .container .todo-list li .todo-container p {
   margin: 15px 60px 15px 20px;
+  padding: 2px;
   font-size: 14px;
   line-height: 130%;
 }

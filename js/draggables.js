@@ -25,6 +25,7 @@ containers.forEach((container) => {
 });
 
 function getDragAfterElement(container, y) {
+  console.dir(container);
   const draggableElements = [
     ...container.querySelectorAll('.draggable:not(.dragging)'),
   ];
